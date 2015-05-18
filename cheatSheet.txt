@@ -1,0 +1,21 @@
+HTML cheat sheet
+
+Tags
+
+Surround content and apply meaning to it.
+
+eg.
+
+<body> </body>
+
+Attributes
+
+Extra bits of information that appear inside the opening tag and their values sit inside quotation marks.
+
+eg.
+
+<tag attribute = "value"> Something something </tag>
+
+Elements
+
+Bits that make up a web page. Usually in-between tags. You would say everything inside the <body> </body> tags is an element(body element).

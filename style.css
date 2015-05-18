@@ -1,0 +1,117 @@
+
+p {
+    color: black;
+	word-spacing: 0.1em;
+	line-height: 1.5em; 
+	line-spacing : 1em;
+}
+
+a {
+    color: blue;
+}
+
+
+h1 {
+	text-align : center;
+	color : #336699;
+	letter-spacing : 0.1em;
+	
+
+}
+
+h2 {
+	color : dark;
+	text-align : center;
+    padding: 2px;
+	
+	
+    
+}
+
+body {
+	font-size : 15px;
+	
+	
+	width: 900px; 
+	margin: 0 auto; 
+	
+	font-family : calibri, arial;
+		
+	background-color : #999999;
+	
+	
+
+}
+
+#link
+{
+	margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+	padding : 5x;
+
+}
+
+#menu ul {
+	text-align : center;
+	list-style : none;
+	margin : 0;
+	padding : 0;
+	word-spacing : 0.5em;
+	
+	border-style: groove;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+	border-color : #666666;
+	
+	padding: 2px;
+
+}
+#menu li {
+	
+	display : inline-block;
+	
+
+}
+
+a{
+	
+	color : #336699;
+	text-decoration : none;
+	font-weight : bold;
+}
+
+#content
+
+{
+
+	border-style: groove;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+	border-color : #666666;
+	
+	
+	padding : 10px;
+}
+
+#meme
+
+{
+
+text-align : center;
+
+}
+
+#siteTitle
+
+{
+
+	border-style: groove;
+    border-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+	border-color : #666666;
+
+}
