@@ -6,21 +6,17 @@ p {
 	line-spacing : 1em;
 }
 
-a {
-    color: blue;
-}
-
 
 h1 {
 	text-align : center;
-	color : #336699;
+	color : #1B1D26;
 	letter-spacing : 0.1em;
 	
 
 }
 
 h2 {
-	color : dark;
+	color : black;
 	text-align : center;
     padding: 2px;
 	
@@ -37,7 +33,7 @@ body {
 	
 	font-family : calibri, arial;
 		
-	background-color : #999999;
+	background-color :white;
 }
 
 #link
@@ -60,7 +56,7 @@ body {
     border-width: 2px;
     border-left-width: 2px;
     border-right-width: 2px;
-	border-color : #666666;
+	border-color : black;
 	
 	padding: 2px;
 
@@ -74,7 +70,7 @@ body {
 
 a{
 	
-	color : #336699;
+	color : black;
 	text-decoration : none;
 	font-weight : bold;
 }
@@ -87,7 +83,7 @@ a{
     border-width: 2px;
     border-left-width: 2px;
     border-right-width: 2px;
-	border-color : #666666;
+	border-color : black;
 	
 	
 	padding : 10px;
@@ -109,6 +105,6 @@ text-align : center;
     border-width: 2px;
     border-left-width: 2px;
     border-right-width: 2px;
-	border-color : #666666;
+	border-color : #31353D;
 
 }
