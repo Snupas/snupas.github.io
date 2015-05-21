@@ -33,39 +33,51 @@
             })();
         </script>
 
-  
+             <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script>
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+         }
+        });
+        });
+        </script>
 
     </head>
 
-<body id = "home-us">
+
+    </head>
+
+<body id = "contact-us">
   <div class="wrapper">
     <div>
       <article>
         <h1>Snupas</h1>
        
-         <ul class = "navigation">
-         <li class = "home"> <a href = "index.html" >homePage</a></li>
-         <li class = "about"> <a href = "portfolio.html" >myPortfolio</a></li>
-         <li class = "contact"> <a href = "contact.html">contactInfo</a></li>
+         <ul>
+         <li class = "home" > <a href = "index.html" class = "home">homePage</a></li>
+         <li class = "about"> <a href = "portfolio.html" class = "portfolio">myPortfolio</a></li>
+         <li class = "contact"> <a href = "contact.html" class = "contact">contactInfo</a></li>
          </ul> 
          <p>
         
         <p class = "heading"></p>
-        <p class="weight2">Here we go...</p>
-        <p class = "date">May 21, 2015</p>
-        <p>This website was created as an online portfolio to show off projects that I have worked on or currently are working for. The website was also a crash course for learning HTML and CSS. I wanted the site to consist of manually coded HTML and CSS, no dreamweaver or drawscript, although I ended up using bits of javascript for custom fonts and shorter borders. I also wanted the website to just be purely functional, no unnesecary effects, image banners or anything like that. After all, it serves as a static portfolio, not as a dynamic, content driver website.  </p>
-        <p>The website will probably evolve greatly in the future, but it is as it is right now. I am planning to work on several game projects in the very soon future, so the progress on those and their final incarnations will be uploaded on this website.</p>
+        <p class = "weight2">Email</p>
+        <p></p>
+        <a class = "email" href="mailto:rokasmackevicius@gmail.com">rokasmackevicius@gmail.com</a> 
+        <p></p>
+        <p class = "weight2">Phone</p>
+        <p></p>
+        <a class = "email"href="tel:07530472630">07530472630</a>
         <p class = "heading"></p>
        
-      <footer>
+        
+       <footer>
       <p>Site created by Rokas Mackevicius</p>
-      </footer>
+      </footer> 
       </article>
     </div>
   </div>
-  <footer>
-   
- 
 </body>
-
 </html>
