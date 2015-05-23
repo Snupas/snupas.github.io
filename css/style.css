@@ -1,11 +1,13 @@
 body{
-	 padding: 50px 0;
+	 padding: 25px 0px;
 	 font-size: 13px;
 	 font-family: "Open Sans";
 	 font-style: normal;
 	 font-weight: 400;
 	 background-color : #DAEAEF;
 }
+
+
 
 p.date {
 
@@ -111,7 +113,7 @@ div.wrapper{
 	 text-align: center;
 	 padding-bottom: 20px;
 	 min-height: 100%;
-	 width: auto;
+	 width: 960px;
 	 max-width: none;
 }
 
@@ -145,8 +147,9 @@ h2
 
 p{
 	 font-size: 12px;
-	 line-height: 26px;
-	 margin-bottom : 15px;
+	 line-height: 1.5em;
+	 margin-bottom : 2.5em;
+
 }
 
 p.weights{
