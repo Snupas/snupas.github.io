@@ -4,7 +4,8 @@ body{
 	 font-family: "Open Sans";
 	 font-style: normal;
 	 font-weight: 400;
-	 background-color : #336688;
+	
+	 background-image : url("http://i.imgur.com/otlHfwC.png");
 }
 
 
@@ -39,7 +40,7 @@ p.weight2{
 	 line-height: 30px;
 	 margin-bottom : -10px;
 	 text-align : left;
-	 color : #272F32;
+	 color: #525252;
 }
 
 p.weight3{
@@ -115,7 +116,23 @@ div.wrapper{
 	 min-height: 100%;
 	 width: 960px;
 	 max-width: none;
-	 background-color : #DAEAEF;
+	 background-color : #191919;
+	 opacity : 0.9;
+	 box-shadow: 5px 5px 5px black;
+}
+
+div.wrapperforFooter{
+	 margin: 0 auto;
+	 display: block;
+	 white-space: nowrap;
+	 text-align: center;
+	 padding-bottom: 0px;
+	 min-height: 100%;
+	 width: 960px;
+	 max-width: none;
+	 background-color : #191919;
+	 opacity : 0.9;
+	 box-shadow: 5px 5px 5px black;
 }
 
 div{
@@ -126,9 +143,9 @@ div{
 	 -webkit-box-sizing: border-box;
 	 -moz-box-sizing: border-box;
 	 box-sizing: border-box;
-	 padding: 0 2%;
-	 max-width: 760px;
-	 width: 760px;
+	 padding: 0 0%;
+	 max-width: 960px;
+	 width: 900px;
 }
 
 h1{
@@ -136,7 +153,7 @@ h1{
 	 line-height: 73px;
 	 margin-bottom: -5px;
      text-align: left;
-     color : #FF3D2E;
+     color : #2A4C6E;
      font-weight: bold;
 }
 
@@ -150,6 +167,7 @@ p{
 	 font-size: 12px;
 	 line-height: 1.5em;
 	 margin-bottom : 2.5em;
+	 color : #E8E6ED;
 
 }
 
@@ -185,7 +203,7 @@ p.map{
 p.heading{
 	 letter-spacing: 2px;
 	 font-size: 13px;
-	 color: #9DBDC6;
+	 color: #262626;
 	 margin-bottom: 15px;
 	 border-width: 0px 0px 1px 0px;
 	 border-style: solid;
@@ -224,7 +242,7 @@ a
 {
 
 	text-decoration : none;
-	color : #FF3D2E;
+	color : #2A4C6E;
 	font-size: 18px;
 }
 
@@ -263,22 +281,22 @@ li {
 
 #home-us .home
  {
-  color : #FF3D2E;	
+  color : #2A4C6E;	
   text-decoration : underline;
   }
 #about-us .about
  {
-  color : #FF3D2E;	
+  color : #2A4C6E;	
   text-decoration : underline;
   }
 #contact-us .contact
  {
-  color : #FF3D2E;	
+  color : #2A4C6E;	
   text-decoration : underline;
   }
 
 footer
 {
-
-	background-color : #9DBDC6;
+	text-align : center;
+	margin-top: 50px;
 }
