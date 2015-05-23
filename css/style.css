@@ -4,7 +4,7 @@ body{
 	 font-family: "Open Sans";
 	 font-style: normal;
 	 font-weight: 400;
-	 background-color : #DAEAEF;
+	 background-color : #336688;
 }
 
 
@@ -115,6 +115,7 @@ div.wrapper{
 	 min-height: 100%;
 	 width: 960px;
 	 max-width: none;
+	 background-color : #DAEAEF;
 }
 
 div{
