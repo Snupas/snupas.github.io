@@ -5,9 +5,8 @@ body{
 	 font-style: normal;
 	 font-weight: 400;
 	
-	 background-image : url("http://i.imgur.com/otlHfwC.png");
+	 background-color : #F6F6E6;
 }
-
 
 
 p.date {
@@ -22,7 +21,7 @@ p.date {
 	 text-align : left;
 
 }
-}
+
 
 p.weight1{
 	 font-family: "Open Sans";
@@ -41,70 +40,7 @@ p.weight2{
 	 margin-bottom : -10px;
 	 text-align : left;
 	 color: #525252;
-}
-
-p.weight3{
-	 font-family: "Open Sans";
-	 font-weight: 400;
-	 font-style: italic;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight4{
-	 font-family: "Open Sans";
-	 font-weight: 400;
-	 font-style: normal;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight5{
-	 font-family: "Open Sans";
-	 font-weight: 600;
-	 font-style: italic;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight6{
-	 font-family: "Open Sans";
-	 font-weight: 600;
-	 font-style: normal;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight7{
-	 font-family: "Open Sans";
-	 font-weight: 700;
-	 font-style: italic;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight8{
-	 font-family: "Open Sans";
-	 font-weight: 700;
-	 font-style: normal;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight9{
-	 font-family: "Open Sans";
-	 font-weight: 800;
-	 font-style: italic;
-	 font-size: 36px;
-	 line-height: 30px;
-}
-
-p.weight10{
-	 font-family: "Open Sans";
-	 font-weight: 800;
-	 font-style: normal;
-	 font-size: 36px;
-	 line-height: 30px;
+	 font-weight: bold;
 }
 
 div.wrapper{
@@ -116,9 +52,10 @@ div.wrapper{
 	 min-height: 100%;
 	 width: 960px;
 	 max-width: none;
-	 background-color : #191919;
+	 background-color : white ;
 	 opacity : 0.9;
-	 box-shadow: 5px 5px 5px black;
+	 margin-top : -0px;
+	
 }
 
 div.wrapperforFooter{
@@ -130,7 +67,7 @@ div.wrapperforFooter{
 	 min-height: 100%;
 	 width: 960px;
 	 max-width: none;
-	 background-color : #191919;
+	 background-color : #F8F8F8 ;
 	 opacity : 0.9;
 	 box-shadow: 5px 5px 5px black;
 }
@@ -149,12 +86,12 @@ div{
 }
 
 h1{
-	 font-size: 32px;
+	 font-size: 34px;
 	 line-height: 73px;
-	 margin-bottom: -5px;
+	 margin-bottom: -48px;
      text-align: left;
-     color : #2A4C6E;
-     font-weight: bold;
+     color : black;
+     
 }
 
 h2
@@ -167,7 +104,7 @@ p{
 	 font-size: 12px;
 	 line-height: 1.5em;
 	 margin-bottom : 2.5em;
-	 color : #E8E6ED;
+
 
 }
 
@@ -220,10 +157,23 @@ p.titleHeading {
 	 border-width: 0px 0px 1px 0px;
 	 border-style: solid;
 	 margin-top: -15px;
-	 color: rgba(0,0,0,1);
+	 color : black;
 
 }
 
+p.menuHeading
+{
+
+	 letter-spacing: 2px;
+	 font-size: 13px;
+
+	 margin-bottom: 0px;
+	 border-width: 0px 0px 1px 0px;
+	 border-style: solid;
+	 margin-top: 0px;
+	 color: rgba(0,0,0,1);
+
+}
 
 
 p.intro{
@@ -242,7 +192,7 @@ a
 {
 
 	text-decoration : none;
-	color : #2A4C6E;
+	color : #E74C3C;
 	font-size: 18px;
 }
 
@@ -254,23 +204,16 @@ a.email {
 a:hover {
     
     opacity: 0.5;
-    text-decoration : underline;
+    font-weight: bold;
 }
-
-a:visited {
-
-	text-decoration : underline;
-}
-
-
 
 ul {
     list-style-type: square;
     margin: 0;
     padding: 0;
     word-spacing : 15px;
-    text-align : left;
-    margin-bottom: 50px;
+    text-align : right;
+    margin-bottom: 5px;
 
 } 
 
@@ -279,22 +222,28 @@ li {
     word-spacing : 45px;
 }
 
-#home-us .home
- {
-  color : #2A4C6E;	
-  text-decoration : underline;
-  }
 #about-us .about
  {
-  color : #2A4C6E;	
-  text-decoration : underline;
+  color : #E74C3C;
+  font-weight: bold;	
+  
+  }
+#blog-us .blog
+ {
+  color : #E74C3C;
+  font-weight: bold;	
+  
   }
 #contact-us .contact
  {
-  color : #2A4C6E;	
-  text-decoration : underline;
+  color : #E74C3C;
+  font-weight: bold;
   }
-
+#port-us .port
+{
+  color : #E74C3C;
+  font-weight: bold;
+}
 footer
 {
 	text-align : center;
