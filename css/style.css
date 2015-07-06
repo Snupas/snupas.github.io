@@ -88,22 +88,30 @@ div{
 h1{
 	 font-size: 34px;
 	 line-height: 73px;
-	 margin-bottom: -48px;
-     text-align: left;
+	 margin-bottom: -38px;
+     text-align: center;
      color : black;
      
 }
 
 h2
 {
-	font size : 32px;
+	font size : 36px;
 	text-align : center ;
+}
+
+h3
+{
+	word-spacing: 0px;
+	font-weight: bold;
 }
 
 p{
 	 font-size: 12px;
 	 line-height: 1.5em;
 	 margin-bottom : 2.5em;
+	 text-align: center;
+	 word-spacing : 0px;
 
 
 }
@@ -248,4 +256,35 @@ footer
 {
 	text-align : center;
 	margin-top: 50px;
+}
+
+#quiz
+{
+	text-align : center;
+	margin-left : 0px;
+
+}
+
+#quizChoise
+{
+	text-align: center;
+}
+
+label {
+    
+    padding-left: -150px;
+   
+    word-spacing : 0px;
+
+    margin-left : -40px;
+}
+
+#credentials {
+
+	margin : 10px;
+}
+
+#dCredentials {
+
+	margin-bottom : 20px;
 }
