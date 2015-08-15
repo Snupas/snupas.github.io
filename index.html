@@ -13,8 +13,8 @@
 
         <!-- // CSS Reset – http://meyerweb.com/eric/tools/css/reset/ -->
         <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
-
         
+
         <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
         
 
@@ -33,126 +33,42 @@
             })();
         </script>
 
+  
+
     </head>
 <meta name = "viewport" content = "width = device-width; initial scale = 1.0 ; maximum-scale = 1.0;">
-<body id = "about-us">  
+<body id = "blog-us">  
   <div class="wrapper">
     <div>
-        
-        <h1>BStress Quiz</h1>       
+        <ul class = "navigation">
+        <h1>Snupas</h1>
+         <li class = "about"> <a href = "index.html">about</a></li>
+         <li class = "blog"> <a href = "blog.html" >blog</a></li>
+         <li class = "port"> <a href = "portfolio.html" >portfolio</a></li>
+         <li class = "contact"> <a href = "contact.html">contact</a></li>
+         </ul> 
          <p>
          <p class = "titleHeading"></p>
         <article>
-        <p>Take this pre-quiz before using the application. It will generate an ID to use with the application.</p>
+        
+        <p class = "weight2">HTML generator</p>
+        <p class = "date">May 24, 2015</p>
+        <p>Wrote a little java program that generates html code for the articles on the web page. For now it's just using the default console interface, but planning to add some kind of graphical editor, as the console isn't very convienent. Java interfaces are a bit cumbersome, so I've been avoiding them for a while, but I guess I'll have no choice this time if I want to do anything else with this program.</p>
+        <p>The website has been updated with a new color scheme, borders are now much more in line with 960px web standard and should scale well on mobile. I have decided to learn javascript, not just for the development of the website, but to use in Unity for future game development, as I became pretty fond of Unity after working on a student project.</p>
+        <p>Aaaand, that's it for now. Going to keep updating this website as a personal dev blog and a self-motivation tool.</p>
+
+        
+        <p class="weight2">Here we go...</p>
+        <p class = "date">May 21, 2015</p>
+        <p>This website was created as an online portfolio to show off projects that I have worked on or currently are working for. The website was also a crash course for learning HTML and CSS. I wanted the site to consist of manually coded HTML and CSS, no dreamweaver or drawscript, although I ended up using bits of javascript for custom fonts and shorter borders. I also wanted the website to just be purely functional, no unnesecary effects, image banners or anything like that. After all, it serves as a static portfolio, not as a dynamic, heavy on user content website.  </p>
+        <p>The website will probably evolve greatly in the future, but it is as it is right now. I am planning to work on several game projects in the very soon future, so the progress on those and their final incarnations will be uploaded on this website.</p>
+        
         </article>
-        <p class = "titleHeading"></p>
-        <form action="grade.php" method="post" id="quiz">
-       
-
-          <li>
-    <div>
-      <div id = "dCredentials">
-      <p id = "credentials">First name and last name:  <input type="text" size="25" value=" "></p>
-      <p id = "credentials"  style="vertical-align: middle; margin: 10px;">Postcode:  <input type="text" size="10" value=""></p>
-      </div>
-       
-    <h3>1. What fruit do you like the most?</h3>
-    <div>
-        <input type="checkbox" name="question-1-answers" id="question-1-answers-A" value="A" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-1-answers-A">Apples.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-1-answers" id="question-1-answers-B" value="B" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-1-answers-B">Oranges.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-1-answers" id="question-1-answers-C" value="C" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-1-answers-C">Bananas.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-1-answers" id="question-1-answers-D" value="D" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-1-answers-D">Other.</label>
-
-    </div>
-    <p></p>
-</li>
- <li>
-    <div>
-    <h3>2. How would you rate this quiz?</h3>
-    <div>
-        <input type="checkbox" name="question-2-answers" id="question-2-answers-A" value="A" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-2-answers-A">It is extremely well made, top honors.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-2-answers" id="question-2-answers-B" value="B" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-2-answers-B">It is good. Could use some improvements.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-2-answers" id="question-2-answers-C" value="C" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-2-answers-C">It is mediocore. Could use a rework.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-2-answers" id="question-2-answers-D" value="D" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-2-answers-D">I don't want to discuss it.</label>
-
-    </div>
-   <p></p>  
-</li>
- <li>
-    <div>
-    <h3>3. What is your favorite animal?</h3>
-    <div>
-        <input type="checkbox" name="question-3-answers" id="question-3-answers-A" value="A" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-3-answers-A">Kangaroo.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-3-answers" id="question-3-answers-B" value="B" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-3-answers-B">Hamster.</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-3-answers" id="question-3-answers-C" value="C" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-3-answers-C">Bigfoot.</label>
-    </div>
-    <p></p>
-</li>
-<li>
-    <div>
-    <h3>4. What is your favorite book?</h3>
-    <div>
-        <input type="checkbox" name="question-4-answers" id="question-4-answers-A" value="A" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-4-answers-A">"C programming. A modern approach."</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-4-answers" id="question-4-answers-B" value="B" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-4-answers-B">"C++ Primer."</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-4-answers" id="question-4-answers-C" value="C" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-4-answers-C">"Human Universe."</label>
-    </div>
-    
-    <div>
-        <input type="checkbox" name="question-4-answers" id="question-4-answers-D" value="D" style="vertical-align: middle; margin: 0px;" />
-        <label for="question-4-answers-D">"Physics in minutes."</label>
-
-    </div>
-   <p></p>  
-</li>
-<input type="submit" value="Submit Quiz"/>
-</div>
-        </form>
+      
+      
     </div>
   </div>
+ 
 </body>
 <div class = "wrapperforFooter">
 <footer>
