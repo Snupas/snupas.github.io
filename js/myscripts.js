@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Decision Tree</title>
-<meta name="description" content="Interactive decision diagram with automatic expansion as the user makes choices." />
-<!-- Copyright 1998-2016 by Northwoods Software Corporation. -->
-<meta charset="UTF-8">
-<script src="go.js"></script>
-<link href="../assets/css/goSamples.css" rel="stylesheet" type="text/css" />  <!-- you don't need to use this -->
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-<script src="goSamples.js"></script>  <!-- this is only for the GoJS Samples framework -->
-<script id="code">
+
   function init() {
     if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
     var $ = go.GraphObject.make;  // for conciseness in defining templates
@@ -294,25 +283,3 @@
     }
     model.linkDataArray = linkDataArray;
   }
-</script>
-</head>
-<body onload="init()">
-<div id="sample">
-  <div id="myDiagramDiv" style="background-color: white; border: solid 1px black; width: 100%; height: 500px"></div>
-  <p>
-  This sample allows a user to make progressive decisions about personality types.
-  </p>
-  <p>
-  There are two kinds of nodes, so there are two node templates ("decision" and "personality")
-  that determine the appearance and behavior of each <a>Node</a>.
-  </p>
-  <p>
-  The "decision" template displays the abbreviated personality type and two choice buttons, all surrounded by a figure.
-  Clicking a button will either expand the choice or will collapse all nodes leading from that choice.
-  </p>
-  <p>
-  The "personality" template displays the personality descriptions, as the "leaf" nodes for the tree.
-  </p>
-</div>
-</body>
-</html>

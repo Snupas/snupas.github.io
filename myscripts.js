@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Decision Tree</title>
-<meta name="description" content="Interactive decision diagram with automatic expansion as the user makes choices." />
-<!-- Copyright 1998-2016 by Northwoods Software Corporation. -->
-<meta charset="UTF-8">
-<script src="go.js"></script>
-<link href="../assets/css/goSamples.css" rel="stylesheet" type="text/css" />  <!-- you don't need to use this -->
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-<script src="goSamples.js"></script>  <!-- this is only for the GoJS Samples framework -->
-<script id="code">
+
   function init() {
     if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
     var $ = go.GraphObject.make;  // for conciseness in defining templates
+
     myDiagram = $(go.Diagram, "myDiagramDiv",  // must name or refer to the DIV HTML element
                   {
                     initialContentAlignment: go.Spot.Left,
@@ -20,6 +10,7 @@
                     // create a TreeLayout for the decision tree
                     layout: $(go.TreeLayout)
                   });
+
     // custom behavior for expanding/collapsing half of the subtree from a node
     function buttonExpandCollapse(e, port) {
       var node = port.part;
@@ -42,6 +33,7 @@
       myDiagram.toolManager.hideToolTip();
       node.diagram.commitTransaction("expand/collapse");
     }
+
     // recursive function for collapsing complete subtree
     function collapseTree(node, portid) {
       node.findLinksOutOf(portid).each(function(l) {
@@ -53,6 +45,7 @@
           }
         });
     }
+
     // get the text for the tooltip from the data on the object being hovered over
     function tooltipTextConverter(data) {
       var str = "";
@@ -66,6 +59,7 @@
       }
       return str;
     }
+
     // define tooltips for buttons
     var tooltipTemplate =
       $(go.Adornment, "Auto",
@@ -81,6 +75,7 @@
           },
           new go.Binding("text", "", tooltipTextConverter))
       );
+
     // define the Node template for non-leaf nodes
     myDiagram.nodeTemplateMap.add("decision",
       $(go.Node, "Auto",
@@ -121,6 +116,7 @@
           )  // end Vertical Panel
         )  // end Horizontal Panel
       ));  // end Node and call to add
+
     // define the Node template for leaf nodes
     myDiagram.nodeTemplateMap.add("personality",
       $(go.Node, "Auto",
@@ -132,6 +128,7 @@
             wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5 },
           new go.Binding("text", "text"))
       ));
+
     // define the only Link template
     myDiagram.linkTemplate =
       $(go.Link, go.Link.Orthogonal,  // the whole link panel
@@ -140,6 +137,7 @@
         $(go.Shape,  // the link shape
           { stroke: "lightblue", strokeWidth: 2 })
       );
+
     // create the model for the decision tree
     var model =
       $(go.GraphLinksModel,
@@ -148,6 +146,7 @@
     makeNodes(model);
     makeLinks(model);
     myDiagram.model = model;
+
     // make all but the start node invisible
     myDiagram.nodes.each(function(n) {
         if (n.text !== "Start") n.visible = false;
@@ -156,16 +155,20 @@
         l.visible = false;
       });
   }
+
   function makeNodes(model) {
     var nodeDataArray = [
       { key: "Start" },  // the root node
+
       // intermediate nodes: decisions on personality characteristics
       { key: "I" },
       { key: "E" },
+
       { key: "IN" },
       { key: "IS" },
       { key: "EN" },
       { key: "ES" },
+
       { key: "INT" },
       { key: "INF" },
       { key: "IST" },
@@ -174,6 +177,7 @@
       { key: "ENF" },
       { key: "EST" },
       { key: "ESF" },
+
       // terminal nodes: the personality descriptions
       { key: "INTJ",
         text: "INTJ: Scientist\nThe most self-confident of all types.  They focus on possibilities and use empirical logic to think about the future.  They prefer that events and people serve some positive use.  1% of population."},
@@ -208,6 +212,7 @@
       { key: "ESFP",
         text: "ESFP: Entertainer\nThe mantra of the ESFP would be \"Carpe Diem.\" They enjoy life to the fullest. They do not, thus, like routines and long-term goals. In general, they are very concerned with others and tend to always try to help others, often perceiving well their needs. 13% of the population."}
     ];
+
     // Provide the same choice information for all of the nodes on each level.
     // The level is implicit in the number of characters in the Key, except for the root node.
     // In a different application, there might be different choices for each node, so the initialization would be above, where the Info's are created.
@@ -259,6 +264,7 @@
     }
     model.nodeDataArray = nodeDataArray;
   }
+
   // The key strings implicitly hold the relationship information, based on their spellings.
   // Other than the root node ("Start"), each node's key string minus its last letter is the
   // key to the "parent" node.
@@ -277,25 +283,3 @@
     }
     model.linkDataArray = linkDataArray;
   }
-</script>
-</head>
-<body onload="init()">
-<div id="sample">
-  <div id="myDiagramDiv" style="background-color: white; border: solid 1px black; width: 100%; height: 500px"></div>
-  <p>
-  This sample allows a user to make progressive decisions about personality types.
-  </p>
-  <p>
-  There are two kinds of nodes, so there are two node templates ("decision" and "personality")
-  that determine the appearance and behavior of each <a>Node</a>.
-  </p>
-  <p>
-  The "decision" template displays the abbreviated personality type and two choice buttons, all surrounded by a figure.
-  Clicking a button will either expand the choice or will collapse all nodes leading from that choice.
-  </p>
-  <p>
-  The "personality" template displays the personality descriptions, as the "leaf" nodes for the tree.
-  </p>
-</div>
-</body>
-</html>
