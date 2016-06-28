@@ -8,7 +8,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
  <style>
-	
+
 	.node {
 		cursor: pointer;
 	}
@@ -28,7 +28,7 @@
 	  stroke: #ccc;
 	  stroke-width: 2px;
 	}
-	
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -54,18 +54,18 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">CS Simulation</a></li>
             <li><a href="about.html">About</a></li>
-           
+           <li><a href="components.html">Components</a></li>
           </ul>
-         
+
             <ul class="nav navbar-nav navbar-right">
-      
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
 			<ul id="login-dp" class="dropdown-menu">
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-							
+
 								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
@@ -86,7 +86,7 @@
 										</div>
 								 </form>
 							</div>
-							
+
 					 </div>
 				</li>
 			</ul>
@@ -116,7 +116,7 @@
                         }
                       }
 
-                       
+
 
 var treeData = [
   {
@@ -139,9 +139,9 @@ var treeData = [
             "parent": "Probability A1",
             value : 1
           }
-          
+
         ]
-            
+
           },
           {
             "name": "Probability A2",
@@ -152,7 +152,7 @@ var treeData = [
             "parent": "Probability A2",
              value : 1
           }
-          
+
         ]
           }
         ]
@@ -171,9 +171,9 @@ var treeData = [
             "parent": "Probability B1",
              value : 1
           }
-          
+
         ]
-            
+
           },
           {
             "name": "Probability B2",
@@ -184,7 +184,7 @@ var treeData = [
             "parent": "Probability B2",
              value : 1
           }
-          
+
         ]
           }
         ]
@@ -198,7 +198,7 @@ var treeData = [
 var margin = {top: -40, right: 20, bottom: 20, left: 300},
 	width = 1500 - margin.right - margin.left,
 	height = 800 - margin.top - margin.bottom;
-	
+
 var i = 0,
 	duration = 750,
 	root;
@@ -218,7 +218,7 @@ var svg = d3.select("body").append("svg")
 root = treeData[0];
 root.x0 = height / 2;
 root.y0 = 0;
-  
+
 update(root);
 
 d3.select(self.frameElement).style("height", "500px");
@@ -250,7 +250,7 @@ function update(source) {
                  .type(function(d) { if
                     (d.value >= 9) { return "square"; } else if
                     (d.value <= 9) { return "diamond";}
-                  }));  
+                  }));
 
   nodeEnter.append("text")
 	  .attr("x", function(d) { return d.children || d._children ? -13 : 13; })
@@ -326,7 +326,7 @@ function click(d) {
 	d._children = null;
   }
 
-  
+
   update(d);
 }
 
