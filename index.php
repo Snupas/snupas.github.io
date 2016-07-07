@@ -120,78 +120,64 @@
 
 
 var treeData = [
-  {
-    "name": "Clinical Decision",
-    "parent": "null",
-
-    "value" : 10,
-    "children": [
-      {
-        "name": "Option A",
-        "parent": "Clinical Decision",
-         "value": 10,
+    {
+        "id": 1,
+        "name": "Start",
         "children": [
-          {
-            "name": "Probability A1",
-            "parent": "Option A",
-             "children": [
-          {
-            "name": "Consequence A1",
-            "parent": "Probability A1",
-            "value" : 1
-          }
-
+            {
+                "id": 2,
+                "name": "Decision A",
+                "children": [
+                    {
+                        "id": 4,
+                        "name": "Possibility A-1",
+                        "children": [
+                            {
+                                "id": 8,
+                                "name": "Consequence A-1"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "name": "Possibility A-2",
+                        "children": [
+                            {
+                                "id": 9,
+                                "name": "Consequence A-2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Decision B",
+                "children": [
+                    {
+                        "id": 6,
+                        "name": "Possibility B-1",
+                        "children": [
+                            {
+                                "id": 10,
+                                "name": "Consequence B-1"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "name": "Possibility B-2",
+                        "children": [
+                            {
+                                "id": 11,
+                                "name": "Consequence B-2"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
-
-          },
-          {
-            "name": "Probability A2",
-            "parent": "Option A",
-             "children": [
-          {
-            "name": "Consequence A2",
-            "parent": "Probability A2",
-             "value" : 1
-          }
-
-        ]
-          }
-        ]
-      },
-      {
-        "name": "Option B",
-        "parent": "Clinical Decision",
-         "value": 10,
-       "children": [
-          {
-            "name": "Probability B1",
-            "parent": "Option B",
-             "children": [
-          {
-            "name": "Consequence B1",
-            "parent": "Probability B1",
-             "value" : 1
-          }
-
-        ]
-
-          },
-          {
-            "name": "Probability B2",
-            "parent": "Option B",
-             "children": [
-          {
-            "name": "Consequence B2",
-            "parent": "Probability B2",
-             "value" : 1
-          }
-
-        ]
-          }
-        ]
-      }
-    ]
-  }
+    }
 ];
 
 
@@ -337,6 +323,29 @@ function click(d) {
   	$(event.target).toggleClass("collapsed");
     $(event.target).next().toggleClass("collapsed");
   });</script>
+  <?php
+    //open connection to mysql db
+    $connection = mysqli_connect("localhost","root","","decision_tree") or die("Error " . mysqli_error($connection));
+
+    //fetch table rows from mysql db
+    $sql = "select * from tree";
+    $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+
+    //create an array
+    $emparray = array();
+    while($row =mysqli_fetch_assoc($result))
+    {
+        $emparray[] = $row;
+    }
+    echo json_encode($emparray);
+
+    $fp = fopen('empdata.json', 'w');
+    fwrite($fp, json_encode($emparray));
+    fclose($fp);
+
+    //close the db connection
+    mysqli_close($connection);
+?>
 </body>
 
 
