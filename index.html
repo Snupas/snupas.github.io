@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stack</h1>
+        <div id="controls">
+            <button id="pop">Pop</button>
+            <button id="push">Push</button>
+        </div>
+        <ul>
+            <li>
+        </ul>
+
+    </div>
+    <script src="js/assets.min.js"></script>
+    <script src="js/structures.min.js"></script>
+
+
+    <script>
+        let st = new Stack([1, 2, 3]);
+        let asset = new Asset('stack');
+        asset.update(st.stack);
+        let handler = function () {
+            asset.update(st.stack);
+        };
+        st.setHandler(handler);
+        document.getElementById("pop").onclick = function () {
+            st.pop()
+        };
+        document.getElementById("push").onclick = function () {
+            st.push(st.stack.length + 1)
+        };
+    </script>
+</body>
+
+</html>
