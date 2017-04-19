@@ -85,6 +85,9 @@
          if (looping) {
              looping = false;
              loopKey.classList.remove('looping');
+             keys.forEach(function(e){
+             e.classList.remove('playing');
+             });
          } else {
              looping = true;
              loopKey.classList.add('looping')
