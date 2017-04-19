@@ -99,9 +99,12 @@
      }
      if (!looping) {
          loopElements.forEach(function(e) {
-             removeTransition(e);
+           
              clearInterval(e);
          });
+          keys.forEach(function(a){
+             a.classList.remove('playing')
+          });
          loopElements = [];
          playSound(e);
      };
