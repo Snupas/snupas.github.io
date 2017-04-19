@@ -100,9 +100,7 @@
          loopElements.forEach(function(e) {
              clearInterval(e);
          });
-          keys.forEach(function(a){
-             a.classList.remove('playing')
-          });
+       
          loopElements = [];
          playSound(e);
      };
@@ -112,10 +110,10 @@
      if (e.propertyName !== 'transform') return; // skip if not transform
      this.classList.remove('playing');
  }
-
+ window.addEventListener('keydown', handler);
  const keys = document.querySelectorAll('.key');
  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
- window.addEventListener('keydown', handler);
+
 
    
   </script>
