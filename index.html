@@ -66,13 +66,12 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
   <script>
-    let looping = false;
+ let looping = false;
  let loopElements = [];
 
  function playSound(e) {
      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
      const key = document.querySelector(`.key[data-key="${e.keyCode}"`);
-
      if (!audio) return; //stop the function from running
      audio.currentTime = 0; //rewind to start
      audio.play();
@@ -99,7 +98,6 @@
      }
      if (!looping) {
          loopElements.forEach(function(e) {
-           
              clearInterval(e);
          });
           keys.forEach(function(a){
@@ -115,12 +113,10 @@
      this.classList.remove('playing');
  }
 
-
- window.addEventListener('keydown', handler);
-
-
  const keys = document.querySelectorAll('.key');
  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+ window.addEventListener('keydown', handler);
+
    
   </script>
 
