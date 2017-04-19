@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
@@ -45,7 +47,13 @@
       <kbd>L</kbd>
       <span class="sound">tink</span>
     </div>
+    <div data-key="67" class="key" id="loop">
+      <kbd>C</kbd>
+      <span class = "controls">Cycle</span>
+    </div>
   </div>
+
+
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -57,27 +65,63 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-  function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
-  }
+  <script>
+    let looping = false;
+ let loopElements = [];
 
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    if (!audio) return;
+ function playSound(e) {
+     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+     const key = document.querySelector(`.key[data-key="${e.keyCode}"`);
 
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
-  }
+     if (!audio) return; //stop the function from running
+     audio.currentTime = 0; //rewind to start
+     audio.play();
+     key.classList.add('playing');
+ }
 
-  const keys = Array.from(document.querySelectorAll('.key'));
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener('keydown', playSound);
-</script>
+ function handler(e) {
+     let timeout;
+     if (e.keyCode == 67) {
+         const loopKey = document.querySelector(`.key[data-key="${e.keyCode}"`)
+         if (looping) {
+             looping = false;
+             loopKey.classList.remove('looping');
+         } else {
+             looping = true;
+             loopKey.classList.add('looping')
+         }
+     } else if (looping) {
+         playSound(e);
+         loopElements.push(setInterval(function() {
+             playSound(e)
+         }, 1000));
+         console.log(loopElements);
+     }
+     if (!looping) {
+         loopElements.forEach(function(e) {
+             removeTransition(e);
+             clearInterval(e);
+         });
+         loopElements = [];
+         playSound(e);
+     };
+ }
+
+ function removeTransition(e) {
+     if (e.propertyName !== 'transform') return; // skip if not transform
+     this.classList.remove('playing');
+ }
+
+
+ window.addEventListener('keydown', handler);
+
+
+ const keys = document.querySelectorAll('.key');
+ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+   
+  </script>
 
 
 </body>
+
 </html>
