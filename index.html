@@ -72,53 +72,45 @@
  function playSound(e) {
      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
      const key = document.querySelector(`.key[data-key="${e.keyCode}"`);
-     if (!audio) return; //stop the function from running
-     audio.currentTime = 0; //rewind to start
+     if (!audio) return; 
+     audio.currentTime = 0; 
      audio.play();
      key.classList.add('playing');
  }
 
  function handler(e) {
-     let timeout;
      if (e.keyCode == 67) {
-         const loopKey = document.querySelector(`.key[data-key="${e.keyCode}"`)
+         const loopKey = document.querySelector(`.key[data-key="${e.keyCode}"`);
          if (looping) {
              looping = false;
              loopKey.classList.remove('looping');
-             keys.forEach(function(e){
-             e.classList.remove('playing');
-             });
-         } else {
+             keys.forEach(key => key.classList.remove('playing'));   
+         } 
+         else {
              looping = true;
              loopKey.classList.add('looping')
-         }
-     } else if (looping) {
+         }    
+     } 
+     if (looping) {
          playSound(e);
-         loopElements.push(setInterval(function() {
-             playSound(e)
-         }, 1000));
-         console.log(loopElements);
+         loopElements.push(setInterval(() => {playSound(e)}, 1000));
      }
      if (!looping) {
-         loopElements.forEach(function(e) {
-             clearInterval(e);
-         });
-       
+         loopElements.forEach(el => clearInterval(el));
          loopElements = [];
          playSound(e);
      };
  }
 
  function removeTransition(e) {
-     if (e.propertyName !== 'transform') return; // skip if not transform
+     if (e.propertyName !== 'transform') return; 
      this.classList.remove('playing');
  }
+
  window.addEventListener('keydown', handler);
  const keys = document.querySelectorAll('.key');
  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-
-
-   
+ 
   </script>
 
 
