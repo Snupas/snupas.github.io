@@ -351,7 +351,7 @@ function initFire() {
     var fireworkTxtContainer = document.getElementById("fireworkTxt");
 
     var txtSequence = [
-        "Nuo Akvilės ir Roko Mackevičių...", "Kad ir kur pasaulyje bebūtume, kiekvieną dieną prisiminsime tėvus, kurie išugdė visas geriausias mūsų sąvybes.", "Sveikinimai Mamai ir Tėčiui su sidabrinėmis vestuvėmis!", ""
+        "Nuo Akvilės ir Roko Mackevičių...", "Kad ir kur pasaulyje bebūtume, kiekvieną dieną prisiminsime tėvus, kurie išugdė visas geriausias mūsų savybes.", "Sveikinimai Mamai ir Tėčiui su sidabrinėmis vestuvėmis!", ""
     ];
 
 
