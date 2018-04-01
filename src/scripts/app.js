@@ -126,6 +126,14 @@ var AudioPlayer = function () {
 
 //Declare playlist
 var trackUrls = [{
+    'name': 'Patruliai - Draugai',
+    'duration': '3:42',
+    'url': 'dist/music/Patruliai - Draugai.mp3'
+}, {
+    'name': 'Boney M - Rasputin',
+    'duration': '5:51',
+    'url': 'dist/music/rasputin.mp3'
+},{
     'name': 'Robbie Williams - Somethin Stupid',
     'duration': '2:52',
     'url': 'dist/music/somethinstupid.mp3'
@@ -145,11 +153,7 @@ var trackUrls = [{
         'name': 'Chris Norman - Gypsy Queen',
         'duration': '3:26',
         'url': 'dist/music/Gypsy Queen.flac'
-    }, {
-        'name': 'Patruliai - Draugai',
-        'duration': '3:42',
-        'url': 'dist/music/Patruliai - Draugai.mp3'
-    }, {
+    },  {
         'name': 'Robin Thicke - Blurred Lines',
         'duration': '4:23',
         'url': 'dist/music/blurredlines.mp3'
@@ -165,10 +169,6 @@ var trackUrls = [{
         'name': 'Modern Talking - You are my heart, you are my soul',
         'duration': '3:49',
         'url': 'dist/music/heartsoul.mp3'
-    }, {
-        'name': 'Boney M - Rasputin',
-        'duration': '5:51',
-        'url': 'dist/music/rasputin.mp3'
     }, {
         'name': 'Gilla - Johnny',
         'duration': '3:49',
@@ -351,7 +351,7 @@ function initFire() {
     var fireworkTxtContainer = document.getElementById("fireworkTxt");
 
     var txtSequence = [
-        "Nuo Akvilės ir Roko Mackevičių...", "Kad ir kur pasaulyje bebūtume, kiekvieną dieną prisiminsime tėvus, kurie išugdė visas geriausias mūsų savybes.", "Sveikinimai Mamai ir Tėčiui su sidabrinėmis vestuvėmis!", ""
+        "Lai tvirtas žingsnis nesustoja,", "Lai darbščios rankos gėrį sėja –", "Gyvenimą tik įpusėjai.", "Sveikinimai Tėčiui su gimtadieniu nuo sūnaus :)", ""
     ];
 
 
