@@ -215,7 +215,7 @@ var trackUrls = [{
         'url': 'dist/music/litaliano.mp3'
     }, 
     {
-        'name': 'Toto Cutugno - Rudens Naktis Sustojo',
+        'name': 'Leon Somov & Jazzu - Rudens Naktis Sustojo',
         'duration': '3:09',
         'url': 'dist/music/rudensnaktis.mp3'
     }
