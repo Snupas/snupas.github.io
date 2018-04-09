@@ -203,6 +203,21 @@ var trackUrls = [{
         'name': 'Sinnead O Connor - Nothing Compares 2 U',
         'duration': '4:40',
         'url': 'dist/music/nothingcompares.mp3'
+    }, 
+    {
+        'name': 'Chris Norman & Suzie Quatro - Stumbling In',
+        'duration': '3:56',
+        'url': 'dist/music/stumblingin.mp3'
+    }, 
+    {
+        'name': 'Toto Cutugno - Litalianio',
+        'duration': '3:56',
+        'url': 'dist/music/litaliano.mp3'
+    }, 
+    {
+        'name': 'Toto Cutugno - Rudens Naktis Sustojo',
+        'duration': '3:09',
+        'url': 'dist/music/rudensnaktis.mp3'
     }
 ];
 function shuffle(array) {
