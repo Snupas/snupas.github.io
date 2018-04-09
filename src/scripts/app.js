@@ -51,7 +51,7 @@ var imgT = setInterval(updatePictures, 30000);
 var AudioPlayer = function () {
     this._playlist = null;
     this._currentSongIndex = 0;
-
+    
     this._getContainer = function () {
         if (this._$container == null) {
             this._$container = $('<div>');
@@ -129,10 +129,6 @@ var trackUrls = [{
     'name': 'Patruliai - Draugai',
     'duration': '3:42',
     'url': 'dist/music/Patruliai - Draugai.mp3'
-}, {
-    'name': 'Boney M - Rasputin',
-    'duration': '5:51',
-    'url': 'dist/music/rasputin.mp3'
 },{
     'name': 'Robbie Williams - Somethin Stupid',
     'duration': '2:52',
@@ -141,11 +137,8 @@ var trackUrls = [{
         'name': 'Biplan - Labas Rytas',
         'duration': '3:41',
         'url': 'dist/music/labasrytas.mp3'
-    },  {
-        'name': 'Robbie Williams - Feel',
-        'duration': '4:24',
-        'url': 'dist/music/01 Feel.mp3'
-    }, {
+    }, 
+    {
         'name': 'James Blunt - You are Beautiful',
         'duration': '3:29',
         'url': 'dist/music/yourebeautiful.mp3'
@@ -157,14 +150,6 @@ var trackUrls = [{
         'name': 'Robin Thicke - Blurred Lines',
         'duration': '4:23',
         'url': 'dist/music/blurredlines.mp3'
-    }, {
-        'name': 'ABBA - Dancing Queen',
-        'duration': '3:51',
-        'url': 'dist/music/dancingqueen.mp3'
-    }, {
-        'name': 'ABBA - Gimmie Gimmie',
-        'duration': '4:29',
-        'url': 'dist/music/dancingqueen.mp3'
     }, {
         'name': 'Modern Talking - You are my heart, you are my soul',
         'duration': '3:49',
@@ -184,8 +169,63 @@ var trackUrls = [{
         'duration': '5:24',
         'url': 'dist/music/Kastytis Kerbedis - Melodija.mp3'
     },
+    {
+        'name': 'Bobby McFerrin - Dont worry be happy',
+        'duration': '4:52',
+        'url': 'dist/music/dontworry.mp3'
+    }, 
+    {
+        'name': 'Laid Back - Sunshine Reggae',
+        'duration': '4:17',
+        'url': 'dist/music/sunshine.mp3'
+    }, 
+    {
+        'name': 'Status Quo - In The Army Now',
+        'duration': '4:35',
+        'url': 'dist/music/inthearmy.mp3'
+    }, 
+    {
+        'name': 'Afric Simone - Hafanana',
+        'duration': '2:57',
+        'url': 'dist/music/hafanana.mp3'
+    }, 
+    {
+        'name': 'ABBA - Money Money Money',
+        'duration': '3:06',
+        'url': 'dist/music/money.mp3'
+    }, 
+    {
+        'name': 'Robbie Williams - Road to Mandalay',
+        'duration': '3:57',
+        'url': 'dist/music/mandalay.mp3'
+    }, 
+    {
+        'name': 'Sinnead O Connor - Nothing Compares 2 U',
+        'duration': '4:40',
+        'url': 'dist/music/nothingcompares.mp3'
+    }
 ];
+function shuffle(array) {
+    let counter = array.length;
 
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}
+
+trackUrls = shuffle(trackUrls);
 //make a new player
 var audioPlayer = new AudioPlayer();
 audioPlayer.setPlaylist(trackUrls);
