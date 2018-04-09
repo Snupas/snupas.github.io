@@ -14,8 +14,8 @@ function updateTime() {
     var a = new Date("March 26, 1993"),
         b = new Date(),
         seconds = dateDiffInSeconds(a, b);
-    console.log(b);
-    console.log(seconds);
+    //console.log(b);
+    //console.log(seconds);
     var fullDiff = [
         ['Oficialiai kartu', seconds],
         ['Dienas', ((seconds / 60) / 60) / 24],
@@ -25,7 +25,7 @@ function updateTime() {
     for (var i = 0; i < timeDisplay.children.length; i++) {
         timeDisplay.children[i].innerHTML = fullDiff[i][0] + " " + fullDiff[i][1].toFixed(0) + " sekundes.";
     }
-    console.log('a second has passed');
+    //console.log('a second has passed');
 }
 
 
