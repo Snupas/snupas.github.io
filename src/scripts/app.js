@@ -255,11 +255,6 @@ var trackUrls = [{
         'url': 'dist/music/hardtosayimsorry.mp3'
     }, 
     {
-        'name': "Culture - Karma Chameleon",
-        'duration': '4:00',
-        'url': 'dist/music/karmachameleon.mp3'
-    }, 
-    {
         'name': "Culture Club - Karma Chameleon",
         'duration': '4:00',
         'url': 'dist/music/karmachameleon.mp3'
