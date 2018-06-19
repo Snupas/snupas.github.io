@@ -218,6 +218,176 @@ var trackUrls = [{
         'name': 'Leon Somov & Jazzu - Rudens Naktis Sustojo',
         'duration': '3:09',
         'url': 'dist/music/rudensnaktis.mp3'
+    }, 
+    {
+        'name': 'Adriano Celentano - Soli',
+        'duration': '4:03',
+        'url': 'dist/music/soli.mp3'
+    }, 
+    {
+        'name': 'Adriano Celentano - Susanna',
+        'duration': '4:45',
+        'url': 'dist/music/susanna.mp3'
+    }, 
+    {
+        'name': 'Adriano Celentano - Il Tempo Se Ne Va',
+        'duration': '3:49',
+        'url': 'dist/music/tempo.mp3'
+    }, 
+    {
+        'name': 'Adriano Celentano - Azzuro',
+        'duration': '3:41',
+        'url': 'dist/music/azzuro.mp3'
+    }, 
+    {
+        'name': 'Air Supply - The One That You Love',
+        'duration': '4:16',
+        'url': 'dist/music/theonethatyoulove.mp3'
+    }, 
+    {
+        'name': 'Barbra Streisand - Woman In Love',
+        'duration': '3:51',
+        'url': 'dist/music/womaninlove.mp3'
+    }, 
+    {
+        'name': "Chicago - Hard to Say I'm sorry",
+        'duration': '3:52',
+        'url': 'dist/music/hardtosayimsorry.mp3'
+    }, 
+    {
+        'name': "Culture - Karma Chameleon",
+        'duration': '4:00',
+        'url': 'dist/music/karmachameleon.mp3'
+    }, 
+    {
+        'name': "Culture Club - Karma Chameleon",
+        'duration': '4:00',
+        'url': 'dist/music/karmachameleon.mp3'
+    }, 
+    {
+        'name': "Cyndi Lauper - Time After Time",
+        'duration': '4:01',
+        'url': 'dist/music/timeaftertime.mp3'
+    }, 
+    {
+        'name': "Eurythmics - Sweet Dreams",
+        'duration': '4:53',
+        'url': 'dist/music/sweetdreams.mp3'
+    }, 
+    {
+        'name': "Gary Barlow - Let Me Go",
+        'duration': '3:38',
+        'url': 'dist/music/letmego.mp3'
+    }, 
+    {
+        'name': "Irene Cera - What a Feeling",
+        'duration': '3:53',
+        'url': 'dist/music/whatafeeling.mp3'
+    }, 
+    {
+        'name': "Kenny Rogers - Lady",
+        'duration': '3:47',
+        'url': 'dist/music/lady.mp3'
+    }, 
+    {
+        'name': "Men at Work - Who Can It Be Now?",
+        'duration': '3:20',
+        'url': 'dist/music/whocanitbenow.mp3'
+    }, 
+    {
+        'name': "Men at Work - Down Under",
+        'duration': '3:40',
+        'url': 'dist/music/downunder.mp3'
+    }, 
+    {
+        'name': "Pupo - SU DI NOI",
+        'duration': '3:51',
+        'url': 'dist/music/sudinoi.mp3'
+    }, 
+    {
+        'name': "Steve Miller Band - Abracadabra",
+        'duration': '5:08',
+        'url': 'dist/music/abracadabra.mp3'
+    }, 
+    {
+        'name': "Savage Garden - Truly Madly Deeply",
+        'duration': '4:37',
+        'url': 'dist/music/trulymadlydeeply.mp3'
+    }, 
+    {
+        'name': "Stevie Wonder - Ebony & Ivory",
+        'duration': '3:38',
+        'url': 'dist/music/ebonyivory.mp3'
+    }, 
+    {
+        'name': "Stevie Wonder - I Just Called to Say I Love You",
+        'duration': '4:20',
+        'url': 'dist/music/justcalled.mp3'
+    }, 
+    {
+        'name': "Stevie Wonder - Part Time Lover",
+        'duration': '4:14',
+        'url': 'dist/music/parttimelover.mp3'
+    }, 
+    {
+        'name': "Take That - Back for Good",
+        'duration': '4:02',
+        'url': 'dist/music/backforgood.mp3'
+    }, 
+    {
+        'name': "Toto - Africa",
+        'duration': '4:55',
+        'url': 'dist/music/africa.mp3'
+    }, 
+    {
+        'name': "USA FOR AFRICA - We Are The World",
+        'duration': '7:07',
+        'url': 'dist/music/wearetheworld.mp3'
+    }, 
+    {
+        'name': "Joe Cocker & Jennifer Warnes - Up Where We Belong",
+        'duration': '3:50',
+        'url': 'dist/music/wherewebelong.mp3'
+    }, 
+    {
+        'name': "Christopher Cross - Arthur's Theme",
+        'duration': '3:54',
+        'url': 'dist/music/arthur.mp3'
+    }, 
+    {
+        'name': "Kim Carnes - Bette Davis Eyes",
+        'duration': '3:42',
+        'url': 'dist/music/bette.mp3'
+    }, 
+    {
+        'name': "The Police - Every Breath You Take",
+        'duration': '4:11',
+        'url': 'dist/music/everybreath.mp3'
+    }, 
+    {
+        'name': "Wet Wet Wet - Love is All Around",
+        'duration': '4:06',
+        'url': 'dist/music/loveisallaround.mp3'
+    }, 
+    {
+        'name': "Wet Wet Wet - Love is All Around",
+        'duration': '4:06',
+        'url': 'dist/music/loveisallaround.mp3'
+    }, 
+    {
+        'name': "Wham! - Wake Me Up Before You Go-Go",
+        'duration': '3:51',
+        'url': 'dist/music/wakemeup.mp3'
+    }, 
+    {
+        'name': "George Michael - Careless Whisper",
+        'duration': '5:02',
+        'url': 'dist/music/carelesswhisper.mp3'
+    }, 
+    {
+        'name': "Bonnie Tyler - Total Eclipse of the Heart",
+        'duration': '4:30',
+        'url': 'dist/music/totaleclipse.mp3'
     }
 ];
 function shuffle(array) {
