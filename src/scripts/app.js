@@ -365,11 +365,6 @@ var trackUrls = [{
         'url': 'dist/music/loveisallaround.mp3'
     }, 
     {
-        'name': "Wet Wet Wet - Love is All Around",
-        'duration': '4:06',
-        'url': 'dist/music/loveisallaround.mp3'
-    }, 
-    {
         'name': "Wham! - Wake Me Up Before You Go-Go",
         'duration': '3:51',
         'url': 'dist/music/wakemeup.mp3'
