@@ -405,11 +405,6 @@ var trackUrls = [{
         'url': 'dist/music/moskau.mp3'
     },
     {
-        'name': "Dschinghis Khan - Moskau",
-        'duration': '3:41',
-        'url': 'dist/music/moskau.mp3'
-    },
-    {
         'name': "Mr President - I Love to Love",
         'duration': '3:10',
         'url': 'dist/music/lovetolove.mp3'
