@@ -378,8 +378,70 @@ var trackUrls = [{
         'name': "Bonnie Tyler - Total Eclipse of the Heart",
         'duration': '4:30',
         'url': 'dist/music/totaleclipse.mp3'
-    }
+    }, 
+    {
+        'name': "Bad Boys Blue - I wanna Hear Your Heartbeat",
+        'duration': '4:03',
+        'url': 'dist/music/heartbeat.mp3'
+    },
+    {
+        'name': "Bad Boys Blue - You're a woman",
+        'duration': '5:21',
+        'url': 'dist/music/urwoman.mp3'
+    },    
+    {
+        'name': "Chris Norman - That's Christmas",
+        'duration': '3:41',
+        'url': 'dist/music/thatschristmas.mp3'
+    },   
+    {
+        'name': "Chris Norman - Stay 0ne More Night",
+        'duration': '4:03',
+        'url': 'dist/music/onemorenight.mp3'
+    },
+    {
+        'name': "Dschinghis Khan - Moskau",
+        'duration': '3:41',
+        'url': 'dist/music/moskau.mp3'
+    },
+    {
+        'name': "Dschinghis Khan - Moskau",
+        'duration': '3:41',
+        'url': 'dist/music/moskau.mp3'
+    },
+    {
+        'name': "Mr President - I Love to Love",
+        'duration': '3:10',
+        'url': 'dist/music/lovetolove.mp3'
+    },
+    {
+        'name': "Mr President - Coco Jamboo",
+        'duration': '3:39',
+        'url': 'dist/music/cocojamboo.mp3'
+    },
+    {
+        'name': "Mr President - Sweat",
+        'duration': '3:50',
+        'url': 'dist/music/sweat.mp3'
+    },
+    {
+        'name': "Haddaway - What is Love",
+        'duration': '4:29',
+        'url': 'dist/music/whatislove.mp3'
+    },
+    {
+        'name': "Lipps Inc - Funky Town",
+        'duration': '3:56',
+        'url': 'dist/music/funkytown.mp3'
+    },
+    {
+        'name': "Smokie - I'll Meet You at Midnight",
+        'duration': '3:21',
+        'url': 'dist/music/meetyouatmidnight.mp3'
+    },
+    
 ];
+
 function shuffle(array) {
     let counter = array.length;
 
