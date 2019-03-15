@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/css/style.css">
-<link rel="stylesheet" href="dist/css/fontawesome-all.min.css">
-    <title>Diskoteka</title>
-</head>
+  
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Rokas Mackevicius</title>
+</head>
 <body>
 
-    <div id="pageContainer">
-        <div id="fireworksContainer" style="display:none">
-            <p id="fireworkTxt">Tegul širdis ilgai liepsnoja,</p>
-            <canvas id="birthday">
+        <header >
+    <div id = "logo"><a href = "index.html">#R</a></div>
+    <nav>
 
-            </canvas>
+    <ul class = "nav-list">
+            <li><a class = "nav-el active" href="#">Home</a></li>
+            <li><a class = "nav-el" href="assets/RokasMackevicius_CV2.pdf">Resume</a></li>
+
+
+        </ul>
+
+    </nav>
+    <div id = "introduction">
+            <h1 class = "slide-up-fade-in"><strong>Hello, I'm Rokas.</strong></h1>
+            <p id= "subtitle" class = "slide-up-fade-in"><strong class = "sub">Full Stack Web Developer based in London.</strong> Supporter of creative and efficient problem solving. Tend to get involved in multiple aspects of web development.
+               <br><br>
+            </p>
         </div>
-        <div id="timeContainer">
-<div id="letitgoContainer">
-    <a id="letitgo" href="#" onclick = "initFire()"><i class="fas fa-fire"></i></a>
-</div>
-            <h1>Aušra ir Romas</h1>
+
+            <div id = "img-contain">
+                    <img src="img/itsme.png" class = "id-photo slide-up-fade-in" alt="">
+                </div>
             
-
-            <div id="imgCarousel" style="cursor: pointer;" onclick=updatePictures()>
-                <div class="imgOverlay" data-value="hidden">
-                    <img src="src/assets/img/3.jpg" alt="">
-                </div>
-<div class="imgOverlay" data-value="hidden">
-    <img src="src/assets/img/5.jpg" alt="">
-</div>
-                <div class="imgOverlay" data-value="hidden">
-                    <img src="src/assets/img/2.jpg" alt="">
-                </div>
-                <div class="imgOverlay" data-value="hidden">
-                    <img src="src/assets/img/1.jpg" alt="">
-                </div>
-                <div class="imgOverlay" data-value="hidden">
-                    <img src="src/assets/img/4.jpg" alt="">
-                </div>
-               
-                <div class="imgOverlay" data-value="hidden">
-                    <img src="src/assets/img/6.jpg" alt="">
-                </div>
+        <div id = "socialSet" class = "slide-up-fade-in" >
+               <div class = "contact-descr">You can find me on:</div> 
+                <a class = "socialIcons" href = "https://www.linkedin.com/in/rokas-mackevi%C4%8Dius-a370969a/"><i class="fab fa-linkedin"></i></a>
+                <a class = "socialIcons" href = "https://github.com/Snupas/"><i class="fab fa-github"></i></a>
+                <a class = "socialIcons" href = "https://twitter.com/itsmerokas"><i class="fab fa-twitter-square"></i></a>
+    
             </div>
 
-
-            <div id="timeDisplay">
-                <div id="seconds"></div>
-            </div>
-
-        </div>
-        <div id="playlistContainer">
-            <div class="audio-player-container"></div>
-
-        </div>
+            <div id = "contactSet" class = "slide-up-fade-in" >
+                    <div class = "contact-descr">Or send an email to:</div> 
+                     <a id = "mail" href="mailto:rokasmackevicius@gmail.com"><i id = "mail-icon" class="fas fa-envelope fa-sm"></i> rokasmackevicius@gmail.com </a>
+             
+         
+                 </div>
+</header>
+<!-- 
+<div id = "container">
+<main> -->
+    <!-- <div id = "proj-introduction">
+        <h1><strong>Work</strong></h1>
     </div>
-    <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="src/scripts/app.js"></script>
-</body>
+        <div class = "item-content" id = "motivar" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="400">
+                <div class = "item-header">                    MotiVar
+                </div>       
+                <div class = "item-text">  
+                                     
+                    <span >Full stack Web Developer / Research asssistant<span class = "date"><i class="fas fa-calendar-alt fa-sm"></i> 2018-2019</span></span>
+                    <p class = "item-par">
+                        Web project that generates a <span class = "highlight">3D avatar</span> of the user from several images and metric measurement input for the purposes of weight loss.
+                        <br><br>
+                        <a href = "https://www.researchgate.net/project/MotiVar-Motivating-weight-loss-through-a-personalised-avatar-2">Learn more about the research.</a>
+               
+                        
 
+            </p></div>
+                <ul class = "tags">
+                        <li class = "tag green-bg">JavaScript</li>
+                        <li class = "tag green-bg">AJAX</li>
+                        <li class = "tag green-bg">WebGL</li>
+                        <li class = "tag green-bg">SASS</li>
+                        <li class = "tag green-bg">Node.js</li>
+                        <li class = "tag green-bg">Express.js</li>
+                        <li class = "tag green-bg">MongoDB</li>
+                        <li class = "tag green-bg">Python</li>
+                        <li class = "tag green-bg">Blender</li>
+                    </ul>
+
+                </div>
+
+                <div class = "item-content" id = "recognizer" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="400">
+                        <div class = "item-header">                    
+                            Recogniser
+                        </div>       
+                        <div class = "item-text">  
+                                             
+                            <span >Full stack Web Developer<span class = "date"><i class="fas fa-calendar-alt fa-sm"></i> 2018-2019</span></span>
+                            <p class = "item-par">
+                                Web project that generates a <span class = "highlight">3D avatar</span> of the user from several images and metric measurement input for the purposes of weight loss.
+                                <br><br>
+                                <a href = "https://www.researchgate.net/project/MotiVar-Motivating-weight-loss-through-a-personalised-avatar-2">Learn more about the research.</a>
+                       
+                                
+        
+                    </p></div>
+                        <ul class = "tags">
+                                <li class = "tag green-bg">JavaScript</li>
+                                <li class = "tag green-bg">AJAX</li>
+                                <li class = "tag green-bg">WebGL</li>
+                                <li class = "tag green-bg">SASS</li>
+                                <li class = "tag green-bg">Node.js</li>
+                                <li class = "tag green-bg">Express.js</li>
+                                <li class = "tag green-bg">MongoDB</li>
+                                <li class = "tag green-bg">Python</li>
+                                <li class = "tag green-bg">Blender</li>
+                            </ul>
+        
+                        </div> -->
+<!-- 
+
+                <div class = "item-content" id = "ctsim" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="400">
+                        <div class = "item-text">                            
+                            <h2 >CTsim</h2>
+                            <h4>Full stack Web Developer</h4>
+                            <p class = "item-par">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p></div>
+                        <div class = "tags">
+                                <span class = "tag">JavaScript</span>
+                                <span class = "tag">jQuery</span>
+                                <span class = "tag">AJAX</span>
+                                <span class = "tag">WebGL</span>
+
+                                <span class = "tag">Python</span>
+                                <span class = "tag">Flask</span>
+
+
+                        </div>
+                    </div> -->
+
+<!-- </main>
+</div> -->
+<footer><span>#! Updated on March 13th, 2019</span></footer>
+
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script> -->
+</body>
 </html>
